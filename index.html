@@ -1,5 +1,16 @@
 <html>
  <body>
-  <iframe type="text/html" src="https://www.youtube.com/embed/-dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="autoplay"></iframe>
+  <div style="position: relative;">
+   <img src="http://s3.amazonaws.com/content.newsok.com/newsok/images/mobile/play_button.png" style="position:absolute;top:0;left:0;opacity:1;" id="cover">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in- picture" allowfullscreen style="position: absolute;top:0;left:0;opacity:0;" id="player"></iframe>
+ </div>
+ <script>
+   setInterval(function(){
+      if(document.activeElement instanceof HTMLIFrameElement){
+         document.getElementById('cover').style.opacity=0;
+         document.getElementById('player').style.opacity=1;
+       }
+    } , 50);
+  </script>
  </body>
 </html>
