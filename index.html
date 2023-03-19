@@ -1,2 +1,62 @@
 <!DOCTYPE html>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Plas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Michael Plas</a>
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="blog.html" class="nav-link">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a href="about.html" class="nav-link">About</a>
+    </li>
+    <li class="nav-item">
+      <a href="contact.html" class="nav-link">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<section class="home">
+  <div class="home-content">
+    <h1>Welcome to my website!</h1>
+    <p>This is a website where I write blogs about things that interest me.</p>
+  </div>
+</section>
+
+<section class="about">
+  <div class="about-content">
+    <h2>About Me</h2>
+    <p>I am a software developer with a passion for writing. When I'm not coding, you can usually find me with my nose buried in a book or working on my latest writing project.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="contact-content">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
