@@ -1,1 +1,22 @@
-[  {    "title": "Why You Should Always Use 2FA",    "date": "2023-04-01",    "image": "2fa.jpg",    "file": "2fa.txt"  }]
+{
+  "posts": [
+    {
+      "title": "Why You Should Always Use 2FA",
+      "date": "2022-09-01",
+      "image": "https://images.unsplash.com/photo-1526304640581-95264c5f0b24",
+      "file": "2fa.txt"
+    },
+    {
+      "title": "10 Tips for Effective Time Management",
+      "date": "2022-08-25",
+      "image": "https://images.unsplash.com/photo-1520250497597-4d4a4abd9d96",
+      "file": "time_management.txt"
+    },
+    {
+      "title": "How to Start Your Own Business",
+      "date": "2022-08-17",
+      "image": "https://images.unsplash.com/photo-1496284043159-4e8129d4c66c",
+      "file": "start_business.txt"
+    }
+  ]
+}
