@@ -1,11 +1,5 @@
-/* Global Styles */
-
-html {
+* {
     box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
 }
 
 body {
@@ -13,42 +7,49 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-nav {
+.row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    margin: -20px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav li:last-child {
-    margin-right: 0;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-main {
+.card {
+    flex-basis: calc(33.33% - 40px);
     margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-h1, h2 {
-    text-align: center;
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .content {
+    padding: 20px;
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
