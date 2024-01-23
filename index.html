@@ -1,67 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>License Manager</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">My Blog</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+  <h1>Welcome to the License Manager</h1>
 
-<div class="container mt-4">
-    <div class="row">
-        <div class="col-md-8">
-            <h1>Welcome to My Blog</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr>
-            <h2>Recent Posts</h2>
-            <div id="recent-posts"></div>
-        </div>
-        <div class="col-md-4">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr>
-            <h2>Categories</h2>
-            <ul class="list-unstyled">
-                <li><a href="#">Category 1</a></li>
-                <li><a href="#">Category 2</a></li>
-                <li><a href="#">Category 3</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+  <div>
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" name="userId">
+    <button onclick="requestLicense()">Request License</button>
+  </div>
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<!-- Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-GgT6Tfbp+oAVH8Wzi1RiXwkzgGbaVfAm1L54QaF/vM52LM3qIaOtf/pdJkrlUpX9"
-        crossorigin="anonymous"></script>
-<!-- Bootstrap JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Custom JS -->
-<script src="main.js"></script>
+  <div id="licenseKeyDisplay"></div>
+
+  <script>
+    async function requestLicense() {
+      const userId = document.getElementById('userId').value;
+
+      // Simulate checking if the user already has a license
+      if (Math.random() < 0.5) {
+        return alert('User already has a license.');
+      }
+
+      // Simulate an API request to Hack The Box
+      const licenseKey = 'abc123';
+
+      // Display the license key
+      document.getElementById('licenseKeyDisplay').innerText = `Your License Key: ${licenseKey}`;
+    }
+  </script>
 </body>
 </html>
