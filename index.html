@@ -1,36 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>License Manager</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Phishing Awareness - Instagram @ Vasanth Vanan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: HeroBiz
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-  <h1>Welcome to the License Manager</h1>
 
-  <div>
-    <label for="userId">User ID:</label>
-    <input type="text" id="userId" name="userId">
-    <button onclick="requestLicense()">Request License</button>
-  </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
 
-  <div id="licenseKeyDisplay"></div>
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Beware: <span>Quishing</span></h1>
+      </a>
 
-  <script>
-    async function requestLicense() {
-      const userId = document.getElementById('userId').value;
+    </div>
+  </header><!-- End Header -->
 
-      // Simulate checking if the user already has a license
-      if (Math.random() < 0.5) {
-        return alert('User already has a license.');
-      }
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+      <img src="assets/img/phishing_account-rafiki.svg" class="img-fluid animated">
+      <h2>You fell into the <span>Trap</span></h2>
+      <p>You have been tricked into accessing this phishing page. <br> Yes, you heard it right!</p>
+      <div class="d-flex">
+      
+      </div>
+    </div>
+  </section>
 
-      // Simulate an API request to Hack The Box
-      const licenseKey = 'abc123';
+  <main id="main">
 
-      // Display the license key
-      document.getElementById('licenseKeyDisplay').innerText = `Your License Key: ${licenseKey}`;
-    }
-  </script>
+    <!-- ======= Call To Action Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row g-5">
+
+          <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+            <h3>But Why?</h3>
+            <p> This website is solely created to simulate and inform the Next Generation of Phishing called -- Quishing! (QR Code Phishing)
+              
+              <br> <br> Gone are the days of traditional email phishing attacks. This new threat allows attackers to create QR codes that appear legitimate, but tricking users into scanning them. 
+              
+              <br> <br> Once scanned, the QR code directs users to a malicious website under the attacker's control. </p>
+            
+          </div>
+
+          <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+            <div class="img">
+              <img src="assets/img/Phishing-account-amico-2.png" alt="" class="img-fluid">
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <div class="section-header">
+      <h2>Ways to Prevent Quishing</h2>
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4><a class="stretched-link">Verify Source</a></h4>
+              <p>If you receive a suspicious QR code in email, verify the sender's identity by checking their email address, name, and logo.</p>
+              <img src="assets/img/amazon.jpg" class="img-fluid">
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4><a class="stretched-link">Preview URLs</a></h4>
+              <p>Before accessing a QR code, use a QR app that provides a URL preview and ensure the URL is not suspicious.</p><br>
+              <img src="assets/img/ios15-iphone12-pro-camera-scan-qr-code.jpg" class="img-fluid">
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4><a class="stretched-link">Setup MFA</a></h4>
+              <p>Enhance security with multi-factor authentication, adding an extra layer of protection through additional verification.</p>
+              <img src="assets/img/two-step-authentication-2fa-two-factor-verification-private-access-login-account_123447-5199.jpg" class="img-fluid">
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a class="stretched-link">Inform Others</a></h4>
+              <p>Spread awareness and protect your community by sharing this knowledge to prevent them from becoming victims</p>
+              <img src="assets/img/girl-use-smartphone-browsing-social-media-illustration-design_368139-6.jpg copy.png" class="img-fluid">
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </div>
+    </section><!-- End Featured Services Section -->
+
+   <!-- ======= Testimonials Section ======= -->
+   <section id="testimonials" class="testimonials">
+    <div class="container" data-aos="fade-up">
+
+      <div >
+        <div >
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="assets/img/dp.jpg" class="testimonial-img" alt="">
+              <h3>Vasanth Vanan</h3>
+              
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                I encourage you to share this phishing campaign QR code with your friends, family, and colleagues. <br> By raising awareness together, we can create a safer digital environment.
+                <i class="bi bi-quote quote-icon-right"></i>
+                <br><br> follow for more such content on <a href="http://instagram.com/vasanth_vanan/">Instagram</a>
+                
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+    </div>
+  </section><!-- End Testimonials Section -->
+
+
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
